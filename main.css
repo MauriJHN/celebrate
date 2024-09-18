@@ -1,0 +1,38 @@
+body {
+  background: #191919;
+  color: #ff0;
+  font-family: sans-serif;
+}
+
+h1, p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+svg {
+  width: 500px;
+  height: 700px;
+  border-radius: 20px;
+  border: solid #fff 1px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 762px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  svg {
+    width: 350px;
+    height: 450px;
+  }
+}
