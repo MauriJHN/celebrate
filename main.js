@@ -16,6 +16,19 @@ const rotateImages = () => {
 }
 
 rotateImages();
-setInterval(() => {
+let interval = setInterval(() => {
   rotateImages();
 }, 10000);
+
+const transition = () => {
+  if (interval != null) {
+    clearInterval(interval);
+  }
+  rotateImages();
+  interval = setInterval(() => {
+    rotateImages();
+  }, 10000);
+}
+
+darkPath.addEventListener("click", transition);
+lightPath.addEventListener("click", transition);

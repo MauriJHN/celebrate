@@ -23,6 +23,7 @@ svg {
 
   path {
     transition-duration: 5s;
+    transition-property: d;
 
     &#dark {
       fill: #000;
