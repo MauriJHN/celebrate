@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 body {
   background: #191919;
   color: #ff0;
-  font-family: sans-serif;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1, p {
@@ -15,8 +19,19 @@ h1 {
 svg {
   width: 500px;
   height: 700px;
-  border-radius: 20px;
-  border: solid #fff 1px;
+  border-radius: 50px;
+
+  path {
+    transition-duration: 5s;
+
+    &#dark {
+      fill: #000;
+    }
+
+    &#light {
+      fill: #ff0;
+    }
+  }
 }
 
 .main-container {
